@@ -55,6 +55,7 @@ function activateMenuAtCurrentSection(section){
 }
 
 function showNavOnScroll(){
+  const navigation = document.querySelector('#navigation')
   if (scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
@@ -82,8 +83,9 @@ function closeMenu() {
 }
 ScrollReveal({
   origin: 'top',
-  distance: '30px',
-  duration: 700
+  distance: '5px',
+  duration: 700,
+
 }).reveal(
   `#home,
 #home img,
